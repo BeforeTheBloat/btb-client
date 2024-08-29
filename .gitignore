@@ -1,0 +1,15 @@
+CMakeFiles
+*.CMakeCache
+CMakeCache.txt
+_deps
+out
+Makefile
+cmake_install.cmake
+*.dll
+*.ilk
+*.pdb
+.vs
+*.vcxproj.filters
+*.sln
+/x64
+/btb-client.dir
