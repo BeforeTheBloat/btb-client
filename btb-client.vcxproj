@@ -116,7 +116,7 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <Link>
-      <AdditionalDependencies>windowscodecs.lib;urlmon.lib;dwrite.lib;dxgi.lib;d3d11.lib;wininet.lib;_deps\libhat-build\Debug\libhat.lib;_deps\minhook-build\Debug\minhook.x64d.lib;_deps\glm-build\glm\Debug\glm.lib;version.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>windowscodecs.lib;urlmon.lib;dwrite.lib;dxgi.lib;d3d11.lib;WindowsApp.lib;wininet.lib;_deps\libhat-build\Debug\libhat.lib;_deps\minhook-build\Debug\minhook.x64d.lib;_deps\glm-build\glm\Debug\glm.lib;version.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -167,7 +167,7 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <Link>
-      <AdditionalDependencies>windowscodecs.lib;urlmon.lib;dwrite.lib;dxgi.lib;d3d11.lib;wininet.lib;_deps\libhat-build\Release\libhat.lib;_deps\minhook-build\Release\minhook.x64.lib;_deps\glm-build\glm\Release\glm.lib;version.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>windowscodecs.lib;urlmon.lib;dwrite.lib;dxgi.lib;d3d11.lib;WindowsApp.lib;wininet.lib;_deps\libhat-build\Release\libhat.lib;_deps\minhook-build\Release\minhook.x64.lib;_deps\glm-build\glm\Release\glm.lib;version.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>false</GenerateDebugInformation>
@@ -211,7 +211,7 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <Link>
-      <AdditionalDependencies>windowscodecs.lib;urlmon.lib;dwrite.lib;dxgi.lib;d3d11.lib;wininet.lib;_deps\libhat-build\MinSizeRel\libhat.lib;_deps\minhook-build\MinSizeRel\minhook.x64.lib;_deps\glm-build\glm\MinSizeRel\glm.lib;version.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>windowscodecs.lib;urlmon.lib;dwrite.lib;dxgi.lib;d3d11.lib;WindowsApp.lib;wininet.lib;_deps\libhat-build\MinSizeRel\libhat.lib;_deps\minhook-build\MinSizeRel\minhook.x64.lib;_deps\glm-build\glm\MinSizeRel\glm.lib;version.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>false</GenerateDebugInformation>
@@ -254,7 +254,7 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <Link>
-      <AdditionalDependencies>windowscodecs.lib;urlmon.lib;dwrite.lib;dxgi.lib;d3d11.lib;wininet.lib;_deps\libhat-build\RelWithDebInfo\libhat.lib;_deps\minhook-build\RelWithDebInfo\minhook.x64.lib;_deps\glm-build\glm\RelWithDebInfo\glm.lib;version.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>windowscodecs.lib;urlmon.lib;dwrite.lib;dxgi.lib;d3d11.lib;WindowsApp.lib;wininet.lib;_deps\libhat-build\RelWithDebInfo\libhat.lib;_deps\minhook-build\RelWithDebInfo\minhook.x64.lib;_deps\glm-build\glm\RelWithDebInfo\glm.lib;version.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -341,15 +341,15 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClInclude Include="C:\Users\judah\source\repos\btb-client\src\btb\sdk\multiversion.hpp" />
     <ClCompile Include="C:\Users\judah\source\repos\btb-client\src\dllmain.cpp" />
     <ClCompile Include="C:\Users\judah\source\repos\btb-client\src\pch.cpp" />
-    <ClCompile Include="C:\Users\judah\source\repos\btb-client\src\utils\imgui\imgui_impl_dx11.cpp" />
-    <ClInclude Include="C:\Users\judah\source\repos\btb-client\src\utils\imgui\imgui_impl_dx11.h" />
-    <ClCompile Include="C:\Users\judah\source\repos\btb-client\src\utils\imgui\imgui_impl_win32.cpp" />
-    <ClInclude Include="C:\Users\judah\source\repos\btb-client\src\utils\imgui\imgui_impl_win32.h" />
     <ClInclude Include="C:\Users\judah\source\repos\btb-client\src\utils\imgui\imconfig.h" />
     <ClCompile Include="C:\Users\judah\source\repos\btb-client\src\utils\imgui\imgui.cpp" />
     <ClInclude Include="C:\Users\judah\source\repos\btb-client\src\utils\imgui\imgui.h" />
     <ClCompile Include="C:\Users\judah\source\repos\btb-client\src\utils\imgui\imgui_demo.cpp" />
     <ClCompile Include="C:\Users\judah\source\repos\btb-client\src\utils\imgui\imgui_draw.cpp" />
+    <ClCompile Include="C:\Users\judah\source\repos\btb-client\src\utils\imgui\imgui_impl_dx11.cpp" />
+    <ClInclude Include="C:\Users\judah\source\repos\btb-client\src\utils\imgui\imgui_impl_dx11.h" />
+    <ClCompile Include="C:\Users\judah\source\repos\btb-client\src\utils\imgui\imgui_impl_win32.cpp" />
+    <ClInclude Include="C:\Users\judah\source\repos\btb-client\src\utils\imgui\imgui_impl_win32.h" />
     <ClInclude Include="C:\Users\judah\source\repos\btb-client\src\utils\imgui\imgui_internal.h" />
     <ClCompile Include="C:\Users\judah\source\repos\btb-client\src\utils\imgui\imgui_tables.cpp" />
     <ClCompile Include="C:\Users\judah\source\repos\btb-client\src\utils\imgui\imgui_widgets.cpp" />

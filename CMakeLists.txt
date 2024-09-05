@@ -93,6 +93,7 @@ target_link_libraries(${PROJECT_NAME} PRIVATE
     dwrite.lib
     dxgi.lib
     d3d11.lib
+    WindowsApp.lib
     wininet.lib
     libhat
     minhook

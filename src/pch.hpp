@@ -30,6 +30,7 @@
 #include <Psapi.h>
 #include <d3d11.h>
 #include <dxgi1_4.h>
+#include <d3dcompiler.h>
 
 // WinRT
 #include <winrt/Windows.ApplicationModel.h>
